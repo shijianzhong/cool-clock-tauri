@@ -1,5 +1,5 @@
 <template>
-    <div class="kerosene-lamp" @mousedown="mouseDown" @mouseup="mouseUp" @contextmenu="mouseUp">
+    <div class="kerosene-lamp" @mousedown="mouseDown" @mouseup="mouseUp" @contextmenu="mouseUp" data-tauri-drag-region>
         <svg id="noise-svg">
             <filter id='noiseFilter'>
                 <feturbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch' />
@@ -7,7 +7,7 @@
             <rect id="noise-rect" filter='url(#noiseFilter)' />
         </svg>
 
-        <div class="clock off">
+        <div class="clock off" data-tauri-drag-region>
             <div class="shadow"></div>
 
             <div class="base-container">
@@ -149,8 +149,8 @@
                 <div></div>
             </div>
 
-            <div class="button" onclick="body.querySelector('.clock').classList.toggle('off')">
-                <div></div>
+            <div class="button" data-tauri-drag-region onclick="body.querySelector('.clock').classList.toggle('off')">
+                <div data-tauri-drag-region></div>
             </div>
         </div>
     </div>

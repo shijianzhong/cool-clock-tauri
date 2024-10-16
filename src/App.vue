@@ -3,8 +3,8 @@ import KeroseneLamp from "./components/KeroseneLamp.vue";
 </script>
 
 <template>
-  <div class="container">
-    <KeroseneLamp></KeroseneLamp>
+  <div class="container" data-tauri-drag-region>
+    <KeroseneLamp data-tauri-drag-region></KeroseneLamp>
   </div>
 </template>
 
