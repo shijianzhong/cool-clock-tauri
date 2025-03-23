@@ -63,6 +63,14 @@ npm run tauri build
 pnpm tauri build
 ```
 
+### 发布应用
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+## 📝 文档
+
 ## 🧩 应用结构
 
 - `src/`: 前端Vue代码
