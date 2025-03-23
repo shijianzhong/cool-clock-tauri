@@ -1,55 +1,113 @@
-name: Build and release
+name: 构建和发布
 on:
   push:
-    branches: [feature-testci]
+    # 当标签被推送时触发
+    tags:
+      - 'v*'
+  # 允许手动触发
   workflow_dispatch:
+
 jobs:
   release:
     permissions:
       contents: write
       actions: write
-      attestations: write
-      deployments: write
       packages: write
       id-token: write
     strategy:
       fail-fast: false
       matrix:
-        platform: [macos-latest, windows-latest]
+        platform: [macos-latest, ubuntu-latest, windows-latest]
+        include:
+          - platform: macos-latest
+            os: macos
+          - platform: ubuntu-latest
+            os: linux
+            # 安装Linux构建依赖
+            setup-cmd: |
+              sudo apt-get update
+              sudo apt-get install -y libwebkit2gtk-4.0-dev build-essential curl wget libssl-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev
+          - platform: windows-latest
+            os: windows
     runs-on: ${{ matrix.platform }}
     steps:
       # 检出存储库
-      - name: Checkout repository
+      - name: 检出代码
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取完整历史以便生成正确的版本号
+
       # 设置 rust 环境
-      - name: Rust setup
+      - name: 设置 Rust 环境
         uses: dtolnay/rust-toolchain@stable
+
+      # 安装Linux依赖（仅限Ubuntu）
+      - name: 安装Linux依赖
+        if: matrix.os == 'linux'
+        run: ${{ matrix.setup-cmd }}
+        shell: bash
+
       # rust 缓存
-      - name: Rust cache
+      - name: Rust 缓存
         uses: swatinem/rust-cache@v2
         with:
           workspaces: './src-tauri -> target'
       
       # 设置 node 环境
-      - name: Sync node version and setup cache
+      - name: 设置 Node.js 环境
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
+          cache: 'pnpm'
+
       # 全局安装pnpm
-      - name: Install pnpm
+      - name: 安装 pnpm
         run: npm install -g pnpm
       
       # 安装前端依赖
-      - name: Install frontend dependencies
+      - name: 安装前端依赖
         run: pnpm install
+
+      # 获取版本号
+      - name: 获取版本号
+        id: get_version
+        shell: bash
+        run: echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
       # 构建应用
-      - name: Build the app
+      - name: 构建应用
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: ${{ github.ref_name }}
-          releaseName: 'XTools v__VERSION__'
-          releaseBody: 'See the assets to download and install this version.'
-          releaseDraft: true
+          tauriScript: pnpm tauri
+          tagName: v${{ steps.get_version.outputs.VERSION }}
+          releaseName: 'Cool Clock v${{ steps.get_version.outputs.VERSION }}'
+          releaseBody: |
+            适用于 macOS、Windows 和 Linux 的 Cool Clock 应用发布版本。
+            
+            ## 下载安装
+            - Windows: 下载 .msi 或 .exe 文件
+            - macOS: 下载 .dmg 或 .app.tar.gz 文件
+            - Linux: 下载 .AppImage 或 .deb 文件
+            
+            ## 更新说明
+            - 此版本包含新的特性和bug修复
+          releaseDraft: false
           prerelease: false
+          includeUpdaterJson: true
+          updaterJsonPreferNsis: true
+          
+      # 上传构建产物
+      - name: 上传构建产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.os }}-build
+          path: |
+            src-tauri/target/release/bundle/**/*.msi
+            src-tauri/target/release/bundle/**/*.exe
+            src-tauri/target/release/bundle/**/*.dmg
+            src-tauri/target/release/bundle/**/*.app.tar.gz
+            src-tauri/target/release/bundle/**/*.deb
+            src-tauri/target/release/bundle/**/*.AppImage
+          retention-days: 7
