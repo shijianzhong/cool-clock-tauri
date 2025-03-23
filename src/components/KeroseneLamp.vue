@@ -8,148 +8,148 @@
         </svg>
 
         <div class="clock off" data-tauri-drag-region>
-            <div class="shadow"></div>
+            <div class="shadow" data-tauri-drag-region></div>
 
-            <div class="base-container">
-                <div class="base">
-                    <div></div>
+            <div class="base-container" data-tauri-drag-region>
+                <div class="base" data-tauri-drag-region>
+                    <div data-tauri-drag-region></div>
                 </div>
             </div>
-            <div class="small-outer-pipe">
-                <div class="small-inner-pipe"></div>
+            <div class="small-outer-pipe" data-tauri-drag-region>
+                <div class="small-inner-pipe" data-tauri-drag-region></div>
             </div>
-            <div class="outer-pipe">
-                <div class="inner-pipe"></div>
+            <div class="outer-pipe" data-tauri-drag-region>
+                <div class="inner-pipe" data-tauri-drag-region></div>
             </div>
-            <div class="pipe-accents">
-                <div class="top-tube"></div>
-                <div class="tube-holders">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+            <div class="pipe-accents" data-tauri-drag-region>
+                <div class="top-tube" data-tauri-drag-region></div>
+                <div class="tube-holders" data-tauri-drag-region>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
                 </div>
-                <div class="top"></div>
-                <div class="topinset"></div>
-                <div class="left">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="top" data-tauri-drag-region></div>
+                <div class="topinset" data-tauri-drag-region></div>
+                <div class="left" data-tauri-drag-region>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
                 </div>
-                <div class="right">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="right" data-tauri-drag-region>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
                 </div>
-                <div class="bottom-left"></div>
-                <div class="bottom-right"></div>
+                <div class="bottom-left" data-tauri-drag-region></div>
+                <div class="bottom-right" data-tauri-drag-region></div>
             </div>
 
-            <div class="display">
-                <div class="row">
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char01">0</div>
-                        <div id="char02">0</div>
+            <div class="display" data-tauri-drag-region>
+                <div class="row" data-tauri-drag-region>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char01" data-tauri-drag-region>0</div>
+                        <div id="char02" data-tauri-drag-region>0</div>
                     </div>
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char11">0</div>
-                        <div id="char12">0</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char21">0</div>
-                        <div id="char22">0</div>
-                    </div>
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char31">0</div>
-                        <div id="char32">0</div>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char11" data-tauri-drag-region>0</div>
+                        <div id="char12" data-tauri-drag-region>0</div>
                     </div>
                 </div>
-                <div style="height: 0.2em;"></div>
-                <div class="small-row">
-                    <div class="row">
-                        <div class="col">
-                            <div>8</div>
-                            <div id="char41">0</div>
-                            <div id="char42">0</div>
+                <div class="row" data-tauri-drag-region>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char21" data-tauri-drag-region>0</div>
+                        <div id="char22" data-tauri-drag-region>0</div>
+                    </div>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char31" data-tauri-drag-region>0</div>
+                        <div id="char32" data-tauri-drag-region>0</div>
+                    </div>
+                </div>
+                <div style="height: 0.2em;" data-tauri-drag-region></div>
+                <div class="small-row" data-tauri-drag-region>
+                    <div class="row" data-tauri-drag-region>
+                        <div class="col" data-tauri-drag-region>
+                            <div data-tauri-drag-region>8</div>
+                            <div id="char41" data-tauri-drag-region>0</div>
+                            <div id="char42" data-tauri-drag-region>0</div>
                         </div>
-                        <div class="col">
-                            <div>8</div>
-                            <div id="char51">0</div>
-                            <div id="char52">0</div>
+                        <div class="col" data-tauri-drag-region>
+                            <div data-tauri-drag-region>8</div>
+                            <div id="char51" data-tauri-drag-region>0</div>
+                            <div id="char52" data-tauri-drag-region>0</div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char61">0</div>
-                        <div id="char62">0</div>
+                <div class="row" data-tauri-drag-region>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char61" data-tauri-drag-region>0</div>
+                        <div id="char62" data-tauri-drag-region>0</div>
                     </div>
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char71">0</div>
-                        <div id="char72">0</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char81">0</div>
-                        <div id="char82">0</div>
-                    </div>
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char91">0</div>
-                        <div id="char92">0</div>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char71" data-tauri-drag-region>0</div>
+                        <div id="char72" data-tauri-drag-region>0</div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char101">0</div>
-                        <div id="char102">0</div>
+                <div class="row" data-tauri-drag-region>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char81" data-tauri-drag-region>0</div>
+                        <div id="char82" data-tauri-drag-region>0</div>
                     </div>
-                    <div class="col">
-                        <div>8</div>
-                        <div id="char111">0</div>
-                        <div id="char112">0</div>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char91" data-tauri-drag-region>0</div>
+                        <div id="char92" data-tauri-drag-region>0</div>
+                    </div>
+                </div>
+                <div class="row" data-tauri-drag-region>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char101" data-tauri-drag-region>0</div>
+                        <div id="char102" data-tauri-drag-region>0</div>
+                    </div>
+                    <div class="col" data-tauri-drag-region>
+                        <div data-tauri-drag-region>8</div>
+                        <div id="char111" data-tauri-drag-region>0</div>
+                        <div id="char112" data-tauri-drag-region>0</div>
                     </div>
                 </div>
             </div>
 
-            <div class="glass-tube"></div>
-            <div class="hex">
-                <div class="overlay"></div>
+            <div class="glass-tube" data-tauri-drag-region></div>
+            <div class="hex" data-tauri-drag-region>
+                <div class="overlay" data-tauri-drag-region></div>
             </div>
 
-            <div class="tube-base-container">
-                <div class="wires">
-                    <div></div>
-                    <div></div>
+            <div class="tube-base-container" data-tauri-drag-region>
+                <div class="wires" data-tauri-drag-region>
+                    <div data-tauri-drag-region></div>
+                    <div data-tauri-drag-region></div>
                 </div>
-                <div class="tube-base"></div>
-                <div class="rods">
-                    <div class="left-rod"></div>
-                    <div class="center-rod"></div>
-                    <div class="right-rod"></div>
+                <div class="tube-base" data-tauri-drag-region></div>
+                <div class="rods" data-tauri-drag-region>
+                    <div class="left-rod" data-tauri-drag-region></div>
+                    <div class="center-rod" data-tauri-drag-region></div>
+                    <div class="right-rod" data-tauri-drag-region></div>
                 </div>
-                <div class="tube-btm"></div>
+                <div class="tube-btm" data-tauri-drag-region></div>
             </div>
 
-            <div class="power-cord">
-                <div></div>
-                <div></div>
+            <div class="power-cord" data-tauri-drag-region>
+                <div data-tauri-drag-region></div>
+                <div data-tauri-drag-region></div>
             </div>
 
-            <div class="button" data-tauri-drag-region onclick="body.querySelector('.clock').classList.toggle('off')">
+            <div class="button" data-tauri-drag-region @click="toggleLamp">
                 <div data-tauri-drag-region></div>
             </div>
         </div>
@@ -157,11 +157,17 @@
 </template>
 <script setup lang="ts">
 
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+
+const currentSecond = ref(0);
+
 const updateTimeAndDate = () => {
     const now = new Date();
     let hours = now.getHours();
     const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds();
+    currentSecond.value = seconds; // 更新当前秒数
+    
     let amPm = hours >= 12 ? 'PM' : 'AM';
     if (hours > 12) {
         hours -= 12;
@@ -186,18 +192,45 @@ const updateTimeAndDate = () => {
         (document.getElementById('char' + i + '1') as HTMLElement)!.textContent = displayStr[i];
         (document.getElementById('char' + i + '2') as HTMLElement)!.textContent = displayStr[i];
     }
+    
+    // 根据秒数设置闪烁样式
+    updateFlickerStyle(seconds);
 }
-const mouseDown = () => {
-    console.log('this is mousedown')
-    // window.ipcRenderer.send('window-move-open', true)
+
+const updateFlickerStyle = (seconds: number) => {
+    // 根据秒数变化闪烁强度
+    // 偶数秒更亮，奇数秒更暗
+    const baseIntensity = seconds % 2 === 0 ? 1 : 0.7;
+    
+    // 每10秒闪烁强度会有一个较大的变化
+    const specialEffect = seconds % 10 === 0 ? 0.4 : 1;
+    
+    // 结合基础亮度和特殊效果
+    const flickerIntensity = baseIntensity * specialEffect;
+    
+    // 颜色变化：每5秒变化一次色调
+    // 从0到300度色相旋转，以便循环不同的色调
+    const hueRotate = (Math.floor(seconds / 5) * 60) % 360;
+    
+    // 应用样式变量到根元素
+    document.documentElement.style.setProperty('--flicker-intensity', flickerIntensity.toString());
+    document.documentElement.style.setProperty('--hue-rotate', `${hueRotate}deg`);
 }
-const mouseUp = () => {
-    console.log('this is mouseup')
-    // window.ipcRenderer.send('window-move-open', false)
+
+const mouseDown = (event: MouseEvent) => {
+    console.log('mousedown event on lamp')
+    // 这里可以添加其他拖拽相关的逻辑如果需要
+}
+const mouseUp = (event: MouseEvent) => {
+    console.log('mouseup event on lamp')
+    // 这里可以添加其他拖拽相关的逻辑如果需要
+}
+const toggleLamp = () => {
+    document.querySelector('.clock')?.classList.toggle('off');
 }
 onMounted(() => {
     updateTimeAndDate();
-    setInterval(updateTimeAndDate, 600);
+    setInterval(updateTimeAndDate, 100); // 更快的更新频率以获得更流畅的闪烁效果
 })
 
 </script>
@@ -232,6 +265,9 @@ onMounted(() => {
     --m1: #fdea09;
     --m2: #e46703;
     --m3: #ac2a04;
+    
+    --flicker-intensity: 1;
+    --hue-rotate: 0deg;
 
     #noise-svg {
         height: 90%;
@@ -539,48 +575,51 @@ onMounted(() => {
             inset 0 0 1.3em 2em var(--_y1)
             /* -------- */
         ;
+        opacity: var(--flicker-intensity);
+        filter: hue-rotate(var(--hue-rotate));
+        transition: opacity 0.3s, filter 1s;
         animation: 5s flicker linear infinite;
     }
 
     @keyframes flicker {
         0% {
-            opacity: 1;
+            opacity: calc(var(--flicker-intensity) * 1);
         }
 
         10% {
-            opacity: 1;
+            opacity: calc(var(--flicker-intensity) * 1);
         }
 
         11% {
-            opacity: 0.8;
+            opacity: calc(var(--flicker-intensity) * 0.8);
         }
 
         12% {
-            opacity: 1;
+            opacity: calc(var(--flicker-intensity) * 1);
         }
 
         65% {
-            opacity: 1;
+            opacity: calc(var(--flicker-intensity) * 1);
         }
 
         66% {
-            opacity: 0.7;
+            opacity: calc(var(--flicker-intensity) * 0.7);
         }
 
         67% {
-            opacity: 0.9;
+            opacity: calc(var(--flicker-intensity) * 0.9);
         }
 
         68% {
-            opacity: 1;
+            opacity: calc(var(--flicker-intensity) * 1);
         }
 
         69% {
-            opacity: 0.4;
+            opacity: calc(var(--flicker-intensity) * 0.4);
         }
 
         70% {
-            opacity: 1;
+            opacity: calc(var(--flicker-intensity) * 1);
         }
 
         100% {
@@ -1359,7 +1398,9 @@ onMounted(() => {
             inset 0em 0em 1em 1em var(--_o1)
             /* -------- */
         ;
-        filter: blur(1px);
+        filter: hue-rotate(var(--hue-rotate)) blur(1px);
+        opacity: var(--flicker-intensity);
+        transition: opacity 0.2s, filter 0.5s;
     }
 
     .power-cord {
@@ -1753,7 +1794,8 @@ onMounted(() => {
             /* -------- */
         ;
         filter: blur(0.7px);
-        animation: 5s flicker linear infinite;
+        opacity: 1;
+        transition: none;
     }
 }
 </style>
